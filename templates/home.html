@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo"><img src="http://drive.google.com/uc?export=view&id=1d0e2Q_qdH7cyRkKqz4BDF2YGdIUdIPgQ" alt=""></a>
+
+        
+            <div class="wrapper">
+                <div class="search-input">
+                    <a href="" target="_blank" hidden></a>
+
+
+                    <input type="text" placeholder="Type to search.." name="text_data" class="input" autocomplete="off" >
+                    <div class="icon"><i class="fas fa-search"></i></div>
+
+
+                    <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                    </div>
+
+
+                </div>
+            </div>
+        
+        <nav class="navbar">
+
+            <a href="/home" class="active" target="_parent">Home</a>
+            <a href="/loginpage" target="_self">LogIn</a>
+            <a href="">
+
+                <button class="profile-btn">
+                    <img src="https://cdn.vectorstock.com/i/1000x1000/04/47/portrait-a-man-vector-32280447.webp" />
+                    <span>anshul</span>
+                </button>
+            </a>
+
+
+        </nav>
+
+    </header>
+
+
+    <section class="container_section_wrapper" id="container_section_wrapper" ></section>
+
+    <section class="container_section" id="container_section"></section>
+
+    <section class="container_section3"  id="container_section3" style="display: none;" ></section>
+    <section class="container_section2" style="display: none;" id="container_section2"></section>
+
+
+    <script src="{{ url_for('static', filename='js/new.js') }}"></script>
+
+</body>
+
+</html>
