@@ -106,7 +106,7 @@ def update():
         ls.append(i)
     
     
-    return ls
+    return jsonify(ls)
 
 
 @app.route('/movies_data',methods=['GET'])
